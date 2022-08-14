@@ -1,0 +1,998 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.three{
+    background-color: brown;
+   
+}.three a{
+    color: aliceblue !important;
+}
+.trademark{
+    position: fixed;
+}
+.trademark img{
+    left: 80px;
+}
+.back{
+    background:url("pic/背景.jpg");
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .1;
+}
+.class-total{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.class{
+    margin-top: 100px;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+.class-pic img{
+    width: 100%;
+}
+.class-txt{
+    display: flex;
+}
+.txt-introduce{
+    display: flex;
+    flex-direction: column;
+}
+.txt-name{
+    text-align: center;
+    font-size: 14px;
+}
+.txt-information{
+    width: 100%;
+    font-size: 12px;
+    line-height: 2;
+}
+.txt-motto{
+    width: 100%;
+   
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+}
+.motto-first{
+  width: 40px;
+}
+.motto-sec{
+    width: 40px;
+}
+/* ============================老師介紹 */
+.bread-total{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.bread{
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+.bread-pic-left{
+    margin: 0 5px;
+}
+.outline{
+    overflow: hidden;
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+.pic-left-large{
+    position: relative;
+    margin-bottom: 3px;
+}
+.pic-left-large img{
+    width: 100%;
+    vertical-align: middle;
+    transition: .5s;
+    overflow: hidden;
+}
+.pic-left-large:hover:before{
+    opacity: 1;
+}
+.pic-left-large::before{
+    content: "超專業課程";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    color: aliceblue;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.pic-left-little{
+    display: flex;
+    justify-content: space-between;
+}
+.little-box-1{
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+    margin-right: 3px;
+    position: relative;
+    vertical-align: middle;
+}
+.little-line-1 img{
+    width: 100%;
+    vertical-align: middle;
+}
+.little-line-1:hover:before{
+    opacity: 1;
+}
+.little-line-1:before{
+    content: "專業師資";
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 800;
+    opacity: 0;
+    transition: .5s;
+}
+.little-box-2{
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+    margin-right: 3px;
+    position: relative;
+    vertical-align: middle;
+}
+.little-line-2 img{
+    width: 100%;
+}
+.little-line-2:hover:before{
+    opacity: 1;
+}
+.little-line-2:before{
+    content: "佳評如潮";
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 800;
+    opacity: 0;
+    transition: .5s;
+}
+/* ============================= */
+.small-box{
+    display: flex;
+    justify-content: space-between;
+}
+.little-item-1{
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+    margin-right: 3px;
+    position: relative;
+    vertical-align: middle;
+}
+.little-item-1 img{
+    width: 100%;
+}
+.pic-right-little-1:hover:before{
+    opacity: 1;
+}
+.pic-right-little-1:before{
+    content: "價格優惠";
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 800;
+    opacity: 0;
+    transition: .5s;
+}
+.little-item-2{
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+    margin-right: 3px;
+    position: relative;
+    vertical-align: middle;
+}
+.little-item-2 img{
+    width: 100%;
+    overflow: hidden;
+}
+.pic-right-little-2{
+    overflow: hidden;
+}
+.pic-right-little-2:hover:before{
+    opacity: 1;
+}
+.pic-right-little-2:before{
+    content: "種類眾多";
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 800;
+    opacity: 0;
+    transition: .5s;
+}
+/* ============================ */
+.bread-pic-right{
+    margin: 0 5px;
+}
+.big-box{
+    overflow: hidden;
+    vertical-align: middle;
+    margin-top: 3px;
+}
+.pic-right-large{
+    position: relative;
+    margin-top: 0px;
+}
+.pic-right-large img{
+    width: 100%;
+    vertical-align: middle;
+    transition: .5s;
+    overflow: hidden;
+}
+.pic-right-large:hover:before{
+    opacity: 1;
+}
+.pic-right-large::before{
+    content: "錯過可惜";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    color: aliceblue;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+/* =================================麵包 */
+.book-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    padding: 100px 0;
+}
+.book{
+    width: 100%;
+    max-width: 300px;
+    padding: 250px 0;
+    margin: auto;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateX(10deg);
+    left: 150px;
+    box-shadow: 0px 0px 10px rgb(212, 212, 212);
+    
+}
+.book h3{
+    text-align: center;
+    font-size: 25px;
+}
+.box{
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgb(212, 212, 212);
+    transform-origin: left;	
+    padding: 10px;
+        
+}
+.open{
+    background-color: brown;
+    color: aliceblue;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    font-weight: 900;
+}
+.book-pic{
+    width: 100%;
+}
+.book-pic img{
+    width: 100%;
+    vertical-align: middle;
+}
+.open p{
+    text-align: left;
+}
+.end{
+    background-color: rgb(176, 74, 74);
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book-one{
+    background-color: white;
+}
+.book-two{
+    background-color: white;
+}
+.book-three{
+    background-color: white;
+    
+}
+.book-btn{
+    text-align: center;
+   
+}
+.next{
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 900;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+.wid{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.book button{
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 800;
+}
+.next:hover span{
+    color: red;
+}
+/* ================================課程 */
+body{
+    position: relative;
+    height: 100%;
+}
+.message-total{
+    width: 50%;
+    max-width: 1200px;
+    margin: auto;
+    visibility: hidden;
+    height: 10%;
+   
+}
+.message{
+    width: 100%;
+    max-width: 730px;
+    margin: auto;
+    height: 1vh;
+    overflow-y: scroll;
+    background-color: white
+    
+}
+.massage-header-photo{
+    width: 100%;
+}
+.massage-header-photo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.message-title h1{
+    font-size: 35px;
+}
+#message-list{
+    display: flex;
+    flex-direction: column;
+}
+#message-list-pic{
+    padding: 0 10px;
+ 
+}
+#message-list-pic img{
+    border-radius: 50%;
+}
+#list-post{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-weight: 800;
+  
+    padding: 0px 0;
+}
+.message-write{
+    padding-top: 20px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    line-height: 3;
+    position:static;
+    bottom:0px;
+    padding: 10px;
+}
+#text{
+    width: 80%;
+    border-radius: 5px;
+}
+#message-btn{
+    width: 100px;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    font-weight: 800;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 50px;
+    border: red;
+}
+
+@media screen and (max-width:650px) {
+    .trademark img{
+        width: 10%;
+    }
+    .book{
+        width: 100%;
+        max-width: 180px;
+        padding: 300px 0;
+        margin: auto;
+        perspective: 800px;
+        transform-style: preserve-3d;
+        position: relative;
+        transform: rotateX(10deg);
+        left: 100px;
+    }
+    .box{
+        width: 100%;
+        max-width: 200px;
+        height: 85%;
+        position: absolute;
+        top: 0;
+        margin: auto;
+        box-shadow: 0px 0px 10px rgb(212, 212, 212);
+        transform-origin: left;	
+        padding: 10px;
+            
+    }
+}
+@media screen and (min-width:768x){
+    /* .class-total{
+        width: 50%;
+    } */
+}
+@media screen and (min-width:960px) {
+    /* .class-total{
+        width: 100%;
+    } */
+    .trademark img{
+        width: 10%;
+    }
+    .bread-total{
+        width: 80%;
+    }
+    .book{
+        width: 100%;
+        max-width: 500px;
+        padding: 300px 0;
+        margin: auto;
+        perspective: 800px;
+        transform-style: preserve-3d;
+        position: relative;
+        transform: rotateX(10deg);
+        perspective: 800px;
+        left: 250px;
+    }
+    .box{
+        width: 100%;
+        max-width: 500px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        margin: auto;
+        box-shadow: 0px 0px 10px rgb(212, 212, 212);
+        transform-origin: left;	
+        padding: 10px;	
+    }
+
+    /* ============================== */
+    #message-list-pic{
+        padding: 0 10px;
+     
+    }
+    #message-list-pic img{
+        border-radius: 50%;
+    }
+    #list-post{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        font-weight: 800;
+       
+        padding: 10px 0;
+    }
+    .message-write{
+        padding-top: 20px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        flex-direction: column;
+        line-height: 3;
+        position: static;
+    }
+    #text{
+        width: 80%;
+        border-radius: 5px;
+    }
+    /* #message-btn{
+        width: 100px;
+        font-size: 18px;
+        display: block;
+        margin: auto;
+        padding: 10px 20px;
+        font-weight: 800;
+        background-color: red;
+        color: aliceblue;
+        border-radius: 50px;
+        border: red;
+    }
+    .message-title{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    #message-list-pic{
+        padding: 0 10px;
+     
+    }
+    #message-list-pic img{
+        border-radius: 50%;
+    }
+    #list-post{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        font-weight: 800;
+        padding: 10px 0;
+    }
+    .message-write{
+        padding-top: 20px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        flex-direction: column;
+        line-height: 3;
+        position: static;
+    }
+    #text{
+        width: 80%;
+        border-radius: 5px;
+    }
+    #message-btn{
+        width: 100px;
+        font-size: 18px;
+        display: block;
+        margin: auto;
+        padding: 10px 20px;
+        font-weight: 800;
+        background-color: red;
+        color: aliceblue;
+        border-radius: 50px;
+        border: red;
+    } */
+}
+/* ==============================1024*/
+
+@media screen and (min-width:1200px) {
+    .message-total{
+        width: 50%;
+        max-width: 1200px;
+        margin: auto;
+        visibility: hidden;
+        height: 10%;
+       
+    }
+    .message{
+        width: 100%;
+        max-width: 730px;
+        margin: auto;
+        overflow-y: scroll;
+        height: 50vh;
+        background-color: white
+        
+    }
+.class-total{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.class{
+    padding: 20px;
+    margin-bottom: 100px;
+}
+.class-pic{
+    margin: auto;
+    width: 100%;
+    /* max-width: 600px; */
+}
+.class-pic img{
+    width: 100%;
+}
+.class-txt{
+    padding-top: 50px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.txt-introduce{
+    display: flex;
+    flex-direction: column;
+}
+.txt-name{
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.txt-information{
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 2;
+}
+.txt-motto{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 33px;
+    line-height: 1.5;
+}
+.motto-first{
+  width: 40px;
+  margin: 5px;
+}
+.motto-sec{
+    width: 40px;
+    margin: 5px;
+}
+/* ============================老師介紹 */
+.bread-total{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.bread{
+    padding-bottom: 100px;
+}
+.outline{
+    overflow: hidden;
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+.pic-left-large{
+    position: relative;
+    margin-bottom: 3px;
+}
+.pic-left-large img{
+    width: 100%;
+    vertical-align: middle;
+    transition: .5s;
+    overflow: hidden;
+}
+.pic-left-large:hover:before{
+    opacity: 1;
+}
+.pic-left-large::before{
+    content: "超專業課程";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    color: aliceblue;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.pic-left-little{
+    display: flex;
+    justify-content: space-between;
+}
+.little-box-1{
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+    margin-right: 3px;
+    position: relative;
+    vertical-align: middle;
+}
+.little-line-1 img{
+    width: 100%;
+    vertical-align: middle;
+}
+.little-line-1:hover:before{
+    opacity: 1;
+}
+.little-line-1:before{
+    content: "專業師資";
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 800;
+    opacity: 0;
+    transition: .5s;
+}
+.little-box-2{
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+    margin-right: 3px;
+    position: relative;
+    vertical-align: middle;
+}
+.little-line-2 img{
+    width: 100%;
+}
+.little-line-2:hover:before{
+    opacity: 1;
+}
+.little-line-2:before{
+    content: "佳評如潮";
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 800;
+    opacity: 0;
+    transition: .5s;
+}
+/* ============================= */
+.small-box{
+    display: flex;
+    justify-content: space-between;
+}
+.little-item-1{
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+    margin-right: 3px;
+    position: relative;
+    vertical-align: middle;
+}
+.little-item-1 img{
+    width: 100%;
+}
+.pic-right-little-1:hover:before{
+    opacity: 1;
+}
+.pic-right-little-1:before{
+    content: "價格優惠";
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 800;
+    opacity: 0;
+    transition: .5s;
+}
+.little-item-2{
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+    margin-right: 3px;
+    position: relative;
+    vertical-align: middle;
+}
+.little-item-2 img{
+    width: 100%;
+    overflow: hidden;
+}
+.pic-right-little-2{
+    overflow: hidden;
+}
+.pic-right-little-2:hover:before{
+    opacity: 1;
+}
+.pic-right-little-2:before{
+    content: "種類眾多";
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 800;
+    opacity: 0;
+    transition: .5s;
+}
+/* ============================ */
+.bread-pic-right{
+    margin: 0 5px;
+}
+.big-box{
+    overflow: hidden;
+    vertical-align: middle;
+    margin-top: 3px;
+}
+.pic-right-large{
+    position: relative;
+}
+.pic-right-large img{
+    width: 100%;
+    vertical-align: middle;
+    transition: .5s;
+    overflow: hidden;
+}
+.pic-right-large:hover:before{
+    opacity: 1;
+}
+.pic-right-large::before{
+    content: "錯過可惜";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    color: aliceblue;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+/* =================================麵包 */
+    .book-container{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    transform-style: preserve-3d;
+    perspective: 800px;
+  
+    }
+    .book{
+    width: 100%;
+    max-width: 1200px;
+    padding: 300px 0;
+    margin: auto;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    position: absolute;
+    transform: rotateX(10deg);
+    perspective: 800px;
+    left: 250px;
+    }
+    .box{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgb(212, 212, 212);
+    transform-origin: left;	
+    padding: 10px;	
+    }
+    .box h3{
+        padding:5px;
+    }
+    .box p{
+        line-height: 1.5;
+    }
+    .open{
+    width: 100%;
+    max-width: 1200px;
+    background-color: brown;
+    color: aliceblue;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    }
+    .book-pic{
+    width: 100%;
+    }
+    .book-pic img{
+    width: 100%;
+    vertical-align: middle;
+    }
+    .open p{
+    text-align: left;
+    }
+    .end{
+    background-color: rgb(176, 74, 74);
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    /* ============================留言區 */
+    
+}
+
+
+

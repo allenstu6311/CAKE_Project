@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(240, 240, 240);
+}
+.back{
+    background:url("pic/背景.jpg");
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .1;
+}
+.fire{
+    background-color: brown;
+}
+.fire a{
+    color: aliceblue !important;
+}
+
+.problem-total{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.problem{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.list-nav{
+    width: 100%;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+}
+.list-nav-control{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+    font-size: 25px;
+    border-bottom: 3px solid black;
+    text-align: center;
+    color: black;
+    align-items: center;
+  
+}
+.list-nav-control span{
+    font-size: 20px;
+    padding: 10px;
+}
+.list-nav-control strong{
+    font-size: 30px;
+    font-weight: 900;
+}
+.list-nav ul{
+    font-weight: 900;
+    cursor: pointer;
+}
+.list-nav li{
+    padding: 20px 
+}
+.list-nav li  p{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+.list-nav li a:first-child{
+    display: block;
+    margin-top: 20px;
+}
+/* ================================== */
+.problem-show{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+
+}
+.show-nav{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+   
+}
+.show-title{
+    font-size: 30px;
+    padding: 10px;
+}
+.show-nav li{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 15px 15px;
+    border-bottom: 2px solid rgb(224, 224, 224);
+    cursor: pointer;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.answer{
+    display: flex;
+    justify-content: space-between;
+}
+.answer strong{
+   color: rgb(224, 224, 224);;
+}
+.answer p{
+    font-weight: 800;
+}
+.answerall p{
+    font-weight: 800;
+    color: gray;
+    font-size: 14px;
+}
+@media screen and (min-width:1024px) {
+    .problem{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .line{
+        border-bottom: 3px solid black;
+    }
+    .list-nav{
+        width: 100%;
+        max-width: 300px;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .list-nav-control{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 800;
+        font-size: 25px;
+        border-bottom:none;
+        text-align: center;
+        color: black;
+        align-items: center;
+    }
+    .list-nav-control span{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .list-nav-control strong{
+        display: none;
+    }
+    .list-nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        font-weight: 900;
+    }
+    .list-nav li{
+        padding: 5px 0;
+        margin: 20px 10px; 
+    }
+    .list-nav li  p{
+        text-decoration: none;
+        font-size: 16px;
+        color: black;
+    }
+    .list-nav li a:first-child{
+        display: block;
+        margin-top: 20px;
+    }
+    /* ================================== */
+    .problem-show{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 30px;
+    }
+    .show-nav{
+        width: 100%;
+        max-width: 700px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 0 30px;
+    }
+    .show-title{
+        font-size: 40px;
+        padding: 15px;
+    }
+    .show-nav li{
+        font-size: 20px;
+        font-weight: 300;
+        padding: 15px 15px;
+        margin: 20px 0;
+    }
+    .answer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .answer strong{
+        font-size: 30px;
+        font-weight: 900;
+        color: rgb(224, 224, 224);;
+    }
+    .answer p{
+        font-weight: 800;
+    }
+    .answerall li{
+        border: none;
+    }
+    .answerall p{
+        font-weight: 900;
+        font-size: 16px;
+        color: gray;
+    }
+}
