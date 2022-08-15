@@ -114,6 +114,16 @@
     padding: 20px;
     color: brown;
 }
+@media screen and (max-width:300px) {
+    .footer-link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        padding: 50px 0;
+    }
+}
 @media screen and (min-width:1024px) {
  .footer-app{
         display: flex;

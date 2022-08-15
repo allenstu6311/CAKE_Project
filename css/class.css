@@ -501,14 +501,14 @@ body{
     .box{
         width: 100%;
         max-width: 200px;
-        height: 85%;
+        height: 100%;
         position: absolute;
         top: 0;
         margin: auto;
         box-shadow: 0px 0px 10px rgb(212, 212, 212);
         transform-origin: left;	
         padding: 10px;
-            
+    
     }
 }
 @media screen and (min-width:768x){

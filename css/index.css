@@ -94,7 +94,7 @@
     border: 1px solid gray;
     display: inline-block;
     border-radius: 50%;
-    margin: 10px;
+    margin: 5px;
 }
 .clicked{
     background-color: red;
@@ -790,7 +790,7 @@
             border: 1px solid gray;
             display: inline-block;
             border-radius: 50%;
-            margin: 10px;
+            margin: 5px;
         }
         .clicked{
             background-color: red;
