@@ -171,6 +171,7 @@ video::-webkit-media-controls-timeline {
         text-align: center;
         display: flex;
         justify-content: center;
+        /* padding-bottom: 30px; */
     }
     .home-btn a{
         display: block;
@@ -196,5 +197,8 @@ video::-webkit-media-controls-timeline {
         border-radius: 100px;
         font-size: 20px;
         font-weight: 800;
+    }
+    .footer{
+        margin-top: 800px;
     }
 }
