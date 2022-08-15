@@ -315,11 +315,14 @@
     visibility: visible;
     pointer-events: visible;
     transition: all 0.2s ease-in-out;
+    overflow: scroll;
+   
 }
 .month-list{
     color: gray;
     font-weight: 700;
     padding: 3px 0;
+   
 }
 /* =====================================月曆 */
 @media screen and (max-width:1024px){
@@ -424,7 +427,13 @@
 }
 
 @media screen and (max-width:768px) {
- 
+    .month-list.show {
+        transform: scale(1);
+        visibility: visible;
+        pointer-events: visible;
+        transition: all 0.2s ease-in-out;
+        overflow: scroll;
+    }
     .about-total{
         width: 100%;
         max-width: 1000px;
@@ -470,7 +479,6 @@
     .about-first{
         position: absolute !important;
         top: -40px;
-        left: 5%;
         width: 100%;
         max-width: 300px;
         display: flex;
@@ -528,6 +536,7 @@
         text-align: right;
         justify-content: flex-start;
         padding: 10px;
+        
     }
     .about-card:nth-of-type(3) .about-pic{
         transform: translateX(-13%);
@@ -535,6 +544,7 @@
     .about-card:nth-of-type(3) .about-txt{
         transform: translateX(0%);
     }
+
     /* .about-card:nth-of-type(3) .about-first{
       
     } */
@@ -582,9 +592,17 @@
        
     }
     
+    
 }
 /* ======================================768 */
 @media screen and (max-width:600px){
+    .month-list.show {
+        transform: scale(1);
+        visibility: visible;
+        pointer-events: visible;
+        transition: all 0.2s ease-in-out;
+        overflow: scroll;
+    }
     .about-title{
         width: 100%;
         max-width: 230px;
