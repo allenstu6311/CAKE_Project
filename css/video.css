@@ -1,0 +1,197 @@
+.movie {
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+audio::-webkit-media-controls-timeline,
+video::-webkit-media-controls-timeline {
+    display: none;
+}
+
+#header {
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 5;
+
+}
+
+.footer-total {
+    position: relative;
+    margin-top: 700px;
+}
+/* =================================== */
+.home-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+   
+}
+.home{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    top: 20%;
+}
+.home-font{
+    width: 100%;
+    max-width: 450px;
+    min-width: 400px;
+    background-color: rgba(240, 248, 255, 0.635)
+    ;
+    padding: 10px 20px;
+}
+.home-font h2{
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+.home-font p{
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 2px;
+    padding: 5px 0;
+    margin: 0 5px;
+    font-weight: 700;
+}
+.home-btn{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.home-btn a:hover{
+    background-color: brown;
+    color: aliceblue;
+}
+.home-btn a{
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    color: brown;
+    background-color: antiquewhite;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 100px;
+}
+.buy{
+    text-align: center;
+}
+.buy a{
+    display: block;
+    width: 300px;
+    text-decoration: none;
+    background-color: red;
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: 800;
+    position: relative;
+    overflow: hidden;
+
+}
+.buy a:hover:before{
+    left:300px
+
+}
+.buy a:before{
+    content: "";
+    width: 70px;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.565);
+    position: absolute;
+    top: 0;
+    left:-300px;
+    transition: .5s;
+}
+@media screen and (max-width:768px) {
+    .home-container{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+       
+    }
+    .home{
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        position: absolute;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        top: 15%;
+    }
+    .home-font{
+        width: 100%;
+        max-width: 450px;
+        min-width: 380px;
+        background-color: rgba(240, 248, 255, 0.635)
+        ;
+        padding: 10px 20px;
+        order: -1;
+        margin-bottom: 20px;
+    }
+    .home-font h2{
+        text-align: center;
+        font-size: 35px;
+        letter-spacing: 2px;
+        padding: 10px;
+    }
+    .home-font p{
+        font-size: 20px;
+        line-height: 2;
+        letter-spacing: 2px;
+        padding: 5px 0;
+        margin: 0 5px;
+    }
+    .home-btn{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .home-btn a{
+        display: block;
+        width: 200px;
+        text-decoration: none;
+        color: brown;
+        background-color: antiquewhite;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 800;
+        border-radius: 100px;
+    }
+    .buy{
+        text-align: center;
+    }
+    .buy a{
+        display: block;
+        width: 200px;
+        text-decoration: none;
+        background-color: red;
+        color: aliceblue;
+        padding: 20px;
+        border-radius: 100px;
+        font-size: 20px;
+        font-weight: 800;
+    }
+}

@@ -18,9 +18,6 @@ $("#int").on("keyup search",function(){
         }
     })
 
-
-
-
 function chose(me){
     let allen = $(me).text();
   
@@ -32,9 +29,6 @@ function chose(me){
     }
    
     
-
-
-
 // =====================搜尋
 let control1 = document.getElementById("control-first")
 let control2 = document.getElementById("control-second")

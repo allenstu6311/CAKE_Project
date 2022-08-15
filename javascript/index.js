@@ -120,7 +120,7 @@ window.onload = function(){
         $(".new-num li:first").addClass("clicked")
        
 
-        $(window).resize(function(){
+        $(function(){
             let winWidth = $(window).width();
             let size =parseInt( $(".new-card").width()+20+"px");
             console.log(winWidth)
@@ -153,8 +153,10 @@ window.onload = function(){
                     left:(size*index*-1),
                     transition:".5s"
                 })
-                if(index==0){
+                if(index<1){
                     index=1;
+                   
+                   
                 }
                 $(".new-num li").eq(index).addClass("clicked");
 
