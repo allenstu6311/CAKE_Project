@@ -132,14 +132,12 @@ window.onload = function(){
             })
         }
         if(winWidth<960){
-
             $(".new-num li").click(function(){
                 index = $(this).index();
                 $(".new").css({
                     left:size*index*-1,
                     transition:".5s"
                 })
-             
                 $(".new-num li").eq(index).addClass("clicked");
 
                 $(".new-num li").not(`:eq(${index})`).removeClass("clicked")

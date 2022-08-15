@@ -6,7 +6,6 @@ $("#int").on("keyup search",function(){
         }
     })
 
-        
     $("#searchBtn").click(function(){
         
         let name = $("#int").val();
@@ -27,8 +26,6 @@ function chose(me){
    $("#int").val(allen)
         
     }
-   
-    
 // =====================搜尋
 let control1 = document.getElementById("control-first")
 let control2 = document.getElementById("control-second")
