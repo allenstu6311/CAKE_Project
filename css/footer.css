@@ -13,7 +13,7 @@
     max-width: 1200px;
     margin: auto;
     text-align: center;
-    z-index: 10;
+    z-index: 5;
     position: relative; 
 }
 .footer-link{

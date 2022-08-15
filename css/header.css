@@ -62,13 +62,14 @@
 }
  #nav{
     position: fixed;
-    left:-100%;
+    left:-200%;
     top: 70px;
     width: 350px;
     height: 100vh;
     background-color:rgb(254, 215, 163);
     text-align: center;
     transition: .5s;
+    z-index: 10;
 }
 #nav a{
     display: block;
