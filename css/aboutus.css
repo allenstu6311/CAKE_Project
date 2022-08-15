@@ -90,7 +90,7 @@
     align-items: center;
 }
 .about-pic{
-    transform: translateX(35%);
+    transform: translateX(25%);
     width: 100%;
     margin-bottom: 30px;
 }
@@ -101,7 +101,7 @@
 }
 .about-txt{
     width: 100%;
-    transform: translateX(10%);
+    transform: translateX(15%);
     display: flex;
     justify-content: flex-end;
     line-height: 2;

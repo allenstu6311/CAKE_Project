@@ -74,8 +74,6 @@ $(".pic-right-large").mouseover(function(){
 	})
 })
 
-
-
 // ====================================
 $(function(){
 	$(window).resize(function(){
@@ -205,6 +203,8 @@ $(function(){
 				})
 				$(".book-two .next").css({
 					transform: "rotateY(0deg)",
+					display:"flex",
+					justifyContent:"flex-end",
 				})
 			
 			}else{
