@@ -48,7 +48,7 @@ calculateBtn.addEventListener("click",function(){
 }
 
 let level;
-if(tdeeEnd.value<1300){
+if(tdeeEnd.value<1600){
     level=1
     $(".food-card").hide()
     $(".level1").show()
@@ -57,7 +57,7 @@ if(tdeeEnd.value<1300){
         fontSize:"30px",
         fontWeight:"900"
     })
-}else if(tdeeEnd.value>1301 && tdeeEnd.value<1600){
+}else if(tdeeEnd.value>1600 && tdeeEnd.value<1900){
     $(".food-card").hide()
     level=2
     $(".level1").show()
@@ -68,7 +68,7 @@ if(tdeeEnd.value<1300){
         fontWeight:"900"
     })
  
-}else if(tdeeEnd.value>1601 && tdeeEnd.value<1900){ 
+}else if(tdeeEnd.value>1901 && tdeeEnd.value<2200){ 
     $(".food-card").hide()
     $(".level1").show()
     $(".level2").show()
@@ -80,7 +80,7 @@ if(tdeeEnd.value<1300){
     })
     level=3
    
-}else if(tdeeEnd.value>1901 && tdeeEnd.value<2200){
+}else if(tdeeEnd.value>2201 && tdeeEnd.value<2500){
     $(".food-card").hide()
     $(".level1").show()
     $(".level2").show()
@@ -134,7 +134,7 @@ clear.addEventListener("click",function(){
 // ==========================================
 $(".tdee-topic p").hide()
 
-$("li").click(function(){
+$(".tdee-topic li").click(function(){
 
     $(this).next().slideToggle()
     
@@ -152,7 +152,7 @@ console.log($(".two").text())
 
         
     }else{
-        $(this).children().text("+").animate({
+        $(this).children().text("-").animate({
             rotate:"0deg"
        
         },500)

@@ -90,7 +90,7 @@ function calculate(){
     let prices = document.querySelectorAll("td:nth-child(4)");
     let numbers = tbody.querySelectorAll("td:nth-child(5)>input[type=number]")
     let checkboxes = tbody.querySelectorAll("th:nth-child(1)>input")
-    console.log(prices)
+
 
 var total = 0;
 for(let i=0;i<prices.length;i++){
@@ -145,19 +145,20 @@ function add(me){
     let div = me.parentNode;
     let spans = div.getElementsByTagName("span")//獲得商品名稱、價格的span
     let name = spans[0].innerText;//獲得商品名子
-    console.log(name);
+    
+    localStorage.setItem(2,div)
 
     let col_1 = tbody.querySelectorAll("td:nth-child(3)");//
 
-    console.log(col_1)
+  
     let found = null;//found 變數代表購物車找到的td
     for(let i = 0;i<col_1.length;i++){
-        console.log('innerText = '+col_1[i].innerText)
+     
         if(col_1[i].innerText==name){
             found = col_1[i]
             break; 
         }
-        console.log(found)
+        
         
     }
 
@@ -165,7 +166,7 @@ function add(me){
         let tr = found.parentNode;
         let input = tr.querySelector("td:nth-child(5)>input:last-child");
         jia(input)
-        console.log(found.parentNode)
+        console.log(input)
     }else{//商品名子原本不存在 (新增商品)
         let tr = document.createElement("tr")
         let th = document.createElement("th")
@@ -203,7 +204,7 @@ function add(me){
 }
     // let buyClose = document.getElementById("buy-close");
     // let buyContainer = document.getElementById("buy-container");
-    // console.log(buyContainer)
+   
     // buyClose.addEventListener("click",function(e){
     //     e.target.style.opacity=0
     // })

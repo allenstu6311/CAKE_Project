@@ -4,7 +4,7 @@ function calculate(){
     let prices = document.querySelectorAll("td:nth-child(4)");
     let numbers = tbody.querySelectorAll("td:nth-child(5)>input[type=number]")
     let checkboxes = tbody.querySelectorAll("th:nth-child(1)>input")
-    console.log(prices)
+    
 
 var total = 0;
 for(let i=0;i<prices.length;i++){
@@ -18,9 +18,10 @@ for(let i=0;i<prices.length;i++){
 
 
 //移除商品  parentNode?
-function del(me){console.log(me)
+function del(me){
     let tr = me.parentNode.parentNode;
     let tbody = tr.parentNode;
+
     tbody.removeChild(tr);
     calculate();
 }
@@ -61,6 +62,7 @@ function add(me){
     let name = spans[0].innerText;//獲得商品名子
 
     let col_1 = tbody.querySelectorAll("td:nth-child(2)");//
+    
     let found = null;//found 變數代表購物車找到的td
     for(let i = 0;i<col_1.length;i++){
         if(col_1[i].innerText==name){
@@ -75,6 +77,7 @@ function add(me){
         let tr = found.parentNode;
         let input = tr.querySelector("td:nth-child(5)>input:last-child");
         jia(input)
+
     }else{//商品名子原本不存在 (新增商品)
         let tr = document.createElement("tr")
         let th = document.createElement("th")
@@ -112,7 +115,7 @@ function add(me){
 }
     // let buyClose = document.getElementById("buy-close");
     // let buyContainer = document.getElementById("buy-container");
-    // console.log(buyContainer)
+
     // buyClose.addEventListener("click",function(e){
     //     e.target.style.opacity=0
     // })
