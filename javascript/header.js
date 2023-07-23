@@ -1,5 +1,6 @@
 let nav = document.getElementById("nav");
 let btn = document.getElementById("header-btn")
+// let creat = document.getElementById("creat")
 
 btn.addEventListener("click",function(){
     nav.classList.toggle("show")
@@ -127,6 +128,11 @@ function loginOut(){
     cycle.style.display="none";
     loginout.style.display="none"
 }
+
+// 
+$(".car").click(function(){
+    $("#buy-container").show()
+})
 
 
 
