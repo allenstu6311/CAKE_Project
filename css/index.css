@@ -288,6 +288,7 @@
     position: relative;
     margin: auto;
     cursor: pointer;
+    z-index: -1;
  
 }
 .computer-btn::before{

@@ -33,15 +33,14 @@ let control3 = document.getElementById("control-three")
 
 
 control1.addEventListener("click",function(){
-var count = 0
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function(){
     if(xhr.readyState==4 &&xhr.status==200){
         document.getElementById("list").innerHTML = xhr.response;
-        var data = JSON.parse({
-
-})
-         alert(data)
+        window.scrollTo({
+            top:0,
+            
+        })
     }
 }
 xhr.open("GET","hotcake-1.html",true);
@@ -50,32 +49,31 @@ xhr.send();
 })
       
 control2.addEventListener("click",function(){
-var count = 0
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function(){
     if(xhr.readyState==4 &&xhr.status==200){
         document.getElementById("list").innerHTML = xhr.response;
-        var data = JSON.parse({
-
-})
-         alert(data)
+        window.scrollTo({
+            top:0,
+            
+        })
     }
 }
 xhr.open("GET","hotcake-2.html",true);
 
 xhr.send();
 })
+
       
 control3.addEventListener("click",function(){
-var count = 0
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function(){
     if(xhr.readyState==4 &&xhr.status==200){
         document.getElementById("list").innerHTML = xhr.response;
-        var data = JSON.parse({
-
-})
-         alert(data)
+        window.scrollTo({
+            top:0,
+            
+        })
     }
 }
 xhr.open("GET","hotcake-3.html",true);
@@ -206,14 +204,14 @@ function add(me){
     // console.log(buyContainer)
     // buyClose.addEventListener("click",function(e){
     //     e.target.style.opacity=0
-    // })
-    $("#buy-container").hide()
+    // // })
+    // $("#buy-container").hide()
     $(".off").click(function(){
         $("#buy-container").hide()
     })
 
     $(".car").click(function(){
-        $("#buy-container").show()
+        $("#buy-container").css('display', 'flex')
     })
 
    // ====================================
