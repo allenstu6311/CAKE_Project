@@ -33,7 +33,6 @@ video::-webkit-media-controls-timeline {
 
 .footer-total {
     position: relative;
-    margin-top: 700px;
 }
 .footer{
     z-index: 1;
@@ -43,7 +42,7 @@ video::-webkit-media-controls-timeline {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-   
+    height: 90vh;
 }
 .home{
     width: 100%;
@@ -52,7 +51,7 @@ video::-webkit-media-controls-timeline {
     position: absolute;
     justify-content: space-around;
     align-items: center;
-    top: 20%;
+    top: 24%;
 }
 .home-font{
     width: 100%;
@@ -132,7 +131,7 @@ video::-webkit-media-controls-timeline {
         width: 100%;
         max-width: 1200px;
         margin: auto;
-       
+       height: 100%;
     }
     .home{
         width: 100%;
