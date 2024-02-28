@@ -294,8 +294,8 @@
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    transform-style: preserve-3d;
-    perspective: 800px;
+    /* transform-style: preserve-3d; */
+    /* perspective: 800px; */
     padding: 100px 0;
 }
 .book{
@@ -303,8 +303,8 @@
     max-width: 300px;
     padding: 250px 0;
     margin: auto;
-    perspective: 800px;
-    transform-style: preserve-3d;
+    /* perspective: 800px; */
+    /* transform-style: preserve-3d; */
     position: relative;
     transform: rotateX(10deg);
     left: 150px;
@@ -335,8 +335,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform-style: preserve-3d;
-    perspective: 800px;
+    /* transform-style: preserve-3d; */
+    /* perspective: 800px; */
     font-weight: 900;
 }
 .book-pic{
@@ -493,8 +493,8 @@ body{
         max-width: 180px;
         padding: 300px 0;
         margin: auto;
-        perspective: 800px;
-        transform-style: preserve-3d;
+        /* perspective: 800px; */
+        /* transform-style: preserve-3d; */
         position: relative;
         transform: rotateX(10deg);
         left: 100px;
@@ -532,11 +532,11 @@ body{
         max-width: 500px;
         padding: 300px 0;
         margin: auto;
-        perspective: 800px;
-        transform-style: preserve-3d;
+        /* perspective: 800px; */
+        /* transform-style: preserve-3d; */
         position: relative;
         transform: rotateX(10deg);
-        perspective: 800px;
+        /* perspective: 800px; */
         left: 250px;
     }
     .box{
@@ -937,8 +937,8 @@ body{
     width: 100%;
     max-width: 500px;
     margin: auto;
-    transform-style: preserve-3d;
-    perspective: 800px;
+    /* transform-style: preserve-3d; */
+    /* perspective: 800px; */
   
     }
     .book{
@@ -946,11 +946,11 @@ body{
     max-width: 1200px;
     padding: 300px 0;
     margin: auto;
-    perspective: 800px;
-    transform-style: preserve-3d;
+    /* perspective: 800px; */
+    /* transform-style: preserve-3d; */
     position: absolute;
     transform: rotateX(10deg);
-    perspective: 800px;
+    /* perspective: 800px; */
     left: 250px;
     }
     .box{
@@ -979,8 +979,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform-style: preserve-3d;
-    perspective: 800px;
+    /* transform-style: preserve-3d; */
+    /* perspective: 800px; */
     }
     .book-pic{
     width: 100%;
