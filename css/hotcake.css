@@ -223,11 +223,9 @@ form{
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 3;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    z-index: 10;
-
 }
 .footer{
     z-index: 1 !important;

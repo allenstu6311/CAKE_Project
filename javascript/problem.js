@@ -3,7 +3,6 @@ $(".answerall").hide();
 
 
 $(".answer").click(function () {
-
   $(this).next().slideToggle();
 
   if($(this).find("strong").text()=="▼"){
