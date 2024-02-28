@@ -308,6 +308,7 @@
     position: relative;
     /* transform: rotateX(10deg); */
     left: 150px;
+    transform-origin: left;	
     /* box-shadow: 0px 0px 10px rgb(212, 212, 212); */
     
 }
@@ -326,6 +327,7 @@
     transform-origin: left;	
     padding: 10px;
     cursor: pointer;
+    
         
 }
 .open{
